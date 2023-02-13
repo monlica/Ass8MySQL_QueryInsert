@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee Information"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="30sp"
+        android:textColor="#1000F5"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnAdd"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:background="#F3F370"
+        android:onClick="addEmployee"
+        android:src="@drawable/addemployee" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnAdd"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>
